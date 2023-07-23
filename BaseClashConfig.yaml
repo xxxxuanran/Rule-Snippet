@@ -12,8 +12,8 @@ dns:
   listen: 127.0.0.1:53
   ipv6: false
   default-nameserver:
-    - 114.114.114.114
-    - 101.226.4.6
+    - 180.184.1.1
+    - 52.80.52.52
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -36,32 +36,32 @@ dns:
     - '+.home.arpa'
     - '+.test'
   nameserver:
-    - tls://dot.pub:853
-    - https://223.6.6.6/dns-query
-  fallback:
-    - tls://dns.opendns.com:853
-    - https://cloudflare-dns.com/dns-query
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-      - 127.0.0.1/32
-    domain:
-      - "+.g.cn"
-      - "+.google.cn"
-      - "+.googleapis.cn"
-      - "+.google.com"
-      - "+.gmail.com"
-      - "+.youtube.com"
-      - "+.youtu.be"
-      - "+.googlevideo.com"
+    - tls://223.5.5.5:853
+    - https://120.53.53.53/dns-query
+  # fallback:
+  #   - tls://dns.opendns.com:853
+  #   - https://cloudflare-dns.com/dns-query
+  # fallback-filter:
+  #   geoip: true
+  #   geoip-code: CN
+  #   ipcidr:
+  #     - 240.0.0.0/4
+  #     - 0.0.0.0/32
+  #     - 127.0.0.1/32
+  #   domain:
+  #     - "+.g.cn"
+  #     - "+.google.cn"
+  #     - "+.googleapis.cn"
+  #     - "+.google.com"
+  #     - "+.gmail.com"
+  #     - "+.youtube.com"
+  #     - "+.youtu.be"
+  #     - "+.googlevideo.com"
 
 # Clash for Windows
-cfw-latency-timeout: 3000
-cfw-latency-url: http://cp.cloudflare.com/generate_204
-cfw-conn-break-strategy:
-  proxy: all
-  profile: true
-  mode: true
+# cfw-latency-timeout: 3000
+# cfw-latency-url: http://cp.cloudflare.com/generate_204
+# cfw-conn-break-strategy:
+#   proxy: all
+#   profile: true
+#   mode: true
