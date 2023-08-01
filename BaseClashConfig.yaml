@@ -9,7 +9,7 @@ experimental:
 
 dns:
   enable: true
-  listen: 127.0.0.1:53
+  listen: 127.0.0.1:5353
   ipv6: false
   default-nameserver:
     - 180.184.1.1
@@ -37,26 +37,30 @@ dns:
     - '+.test'
   nameserver:
     - tls://223.5.5.5:853
-    - https://120.53.53.53/dns-query
-  # fallback:
-  #   - tls://dns.opendns.com:853
-  #   - https://cloudflare-dns.com/dns-query
-  # fallback-filter:
-  #   geoip: true
-  #   geoip-code: CN
-  #   ipcidr:
-  #     - 240.0.0.0/4
-  #     - 0.0.0.0/32
-  #     - 127.0.0.1/32
-  #   domain:
-  #     - "+.g.cn"
-  #     - "+.google.cn"
-  #     - "+.googleapis.cn"
-  #     - "+.google.com"
-  #     - "+.gmail.com"
-  #     - "+.youtube.com"
-  #     - "+.youtu.be"
-  #     - "+.googlevideo.com"
+    - https://1.12.12.12/dns-query
+  fallback:
+    - tls://dns.opendns.com:853
+    - https://doh.dns.sb/dns-query
+  fallback-filter:
+    geoip: false
+    # geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.g.cn
+      - +.google.cn
+      - +.googleapis.cn
+      - +.google.com
+      - +.googleapis.com
+      - +.gmail.com
+      - +.youtube.com
+      - +.youtu.be
+      - +.googlevideo.com
+      - +.doubleclick.net
+      - +.akamai.net
+      - +.akamaized.net
 
 # Clash for Windows
 # cfw-latency-timeout: 3000
