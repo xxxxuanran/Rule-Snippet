@@ -66,9 +66,11 @@ dns:
       - +.youtu.be
       - +.googlevideo.com
       - +.doubleclick.net
-      - +.akamai.net
-      - +.akamaized.net
       - +.akadns.net
+      - +.akamai.net
+      - +.akamaihd.net
+      - +.akamaized.net
+      - +.cloudfront.net
 
 # Clash for Windows
 # cfw-latency-timeout: 3000
