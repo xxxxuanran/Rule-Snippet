@@ -18,6 +18,7 @@ dns:
     - 123.125.81.6
     - 218.30.118.6
     - 140.207.198.6
+    - 180.184.1.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -40,10 +41,9 @@ dns:
     - '+.home.arpa'
     - '+.test'
   nameserver:
-    - 180.184.1.1
-    - tls://dns.pub:853
+    - tls://dot.pub:853
     - tls://dns.alidns.com:853
-    - https://doh.pub/dns-query
+    - https://dns.pub/dns-query
   fallback:
     - tls://8.8.4.4:853
     - tls://dns.opendns.com:853
