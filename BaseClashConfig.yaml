@@ -39,7 +39,6 @@ dns:
     - '+.host'
     - '+.home.arpa'
     - '+.test'
-    - +.com
     - +.net
     - +.org
     - +.jp
