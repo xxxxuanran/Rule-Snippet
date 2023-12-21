@@ -45,12 +45,12 @@ dns:
     - +.jp
   nameserver:
     - 180.184.1.1
-    - tls://dns.alidns.com:853
-    - https://doh.pub/dns-query
+    - tls://120.53.53.53:853
+    - https://223.6.6.6/dns-query
   fallback:
-    - 8.8.4.4
-    - tls://dns.opendns.com:853
     - https://doh.dns.sb/dns-query
+    - tls://dns.opendns.com:853
+    - 8.8.4.4
   fallback-filter:
     geoip: false
     # geoip-code: CN
