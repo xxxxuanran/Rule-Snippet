@@ -47,9 +47,10 @@ dns:
     - tls://120.53.53.53:853
     - https://223.6.6.6/dns-query
   fallback:
-    - https://doh.dns.sb/dns-query
-    - tls://dns.opendns.com:853
-    - 8.8.4.4
+    - https://jp-kix.doh.sb/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tcp://208.67.222.222:5353
+    - 146.112.41.2
   fallback-filter:
     geoip: false
     # geoip-code: CN
