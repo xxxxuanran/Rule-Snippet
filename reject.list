@@ -5,4 +5,9 @@ DOMAIN,live-trace.bilibili.com
 DOMAIN,p2p.huya.com
 DOMAIN,xy.cdn.huya.com
 DOMAIN-KEYWORD,dyp2p
+DOMAIN,ad.ldplayer.net
+DOMAIN,advertise.ldplayer.net
+DOMAIN,storetw.ldmnq.com
+DOMAIN,encdn.ldmnq.com
+DOMAIN,apien.ldmnq.com
 IP-CIDR,203.107.1.0/24,no-resolve
