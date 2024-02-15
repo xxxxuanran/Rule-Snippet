@@ -11,5 +11,6 @@ DOMAIN,storetw.ldmnq.com
 DOMAIN,encdn.ldmnq.com
 DOMAIN,apien.ldmnq.com
 DOMAIN,apitw.ldmnq.com
+DOMAIN-SUFFIX,ads24h.net
 DST-PORT,5228
 IP-CIDR,203.107.1.0/24,no-resolve
