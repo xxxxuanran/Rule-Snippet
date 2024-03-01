@@ -42,38 +42,42 @@ dns:
     - +.net
     - +.org
     - +.jp
+    - +.kr
+    - +.nexon.co.jp
+    - +.nexon.co.kr
+    - +.nexon.com
   nameserver:
     - 180.184.1.1
     - tls://120.53.53.53:853
     - https://223.6.6.6/dns-query
-  fallback:
-    - https://jp-kix.doh.sb/dns-query
-    - tls://1dot1dot1dot1.cloudflare-dns.com
-    - tcp://208.67.222.222:5353
-    - 146.112.41.2
-  fallback-filter:
-    geoip: false
-    # geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-      - 127.0.0.1/32
-    domain:
-      - +.g.cn
-      - +.google.cn
-      - +.googleapis.cn
-      - +.google.com
-      - +.googleapis.com
-      - +.gmail.com
-      - +.youtube.com
-      - +.youtu.be
-      - +.googlevideo.com
-      - +.doubleclick.net
-      - +.akadns.net
-      - +.akamai.net
-      - +.akamaihd.net
-      - +.akamaized.net
-      - +.cloudfront.net
+  # fallback:
+  #   - https://jp-kix.doh.sb/dns-query
+  #   - tls://1dot1dot1dot1.cloudflare-dns.com
+  #   - tcp://208.67.222.222:5353
+  #   - 146.112.41.2
+  # fallback-filter:
+  #   geoip: false
+  #   # geoip-code: CN
+  #   ipcidr:
+  #     - 240.0.0.0/4
+  #     - 0.0.0.0/32
+  #     - 127.0.0.1/32
+  #   domain:
+  #     - +.g.cn
+  #     - +.google.cn
+  #     - +.googleapis.cn
+  #     - +.google.com
+  #     - +.googleapis.com
+  #     - +.gmail.com
+  #     - +.youtube.com
+  #     - +.youtu.be
+  #     - +.googlevideo.com
+  #     - +.doubleclick.net
+  #     - +.akadns.net
+  #     - +.akamai.net
+  #     - +.akamaihd.net
+  #     - +.akamaized.net
+  #     - +.cloudfront.net
 
 # Clash for Windows
 # cfw-latency-timeout: 3000
