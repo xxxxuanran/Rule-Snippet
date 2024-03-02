@@ -1,7 +1,10 @@
 DOMAIN-SUFFIX,mcdn.bilivideo.cn
 DOMAIN,data.bilivideo.com
 DOMAIN,data.bilibili.com
-DOMAIN,live-trace.bilibili.com
+DOMAIN,httpdns.bilivideo.com
+DOMAIN,grpc.biliapi.net
+DOMAIN,stun.chat.bilibili.com
+DOMAIN,stun-1.chat.bilibili.com
 DOMAIN,p2p.huya.com
 DOMAIN,xy.cdn.huya.com
 DOMAIN-KEYWORD,dyp2p
@@ -13,4 +16,5 @@ DOMAIN,apien.ldmnq.com
 DOMAIN,apitw.ldmnq.com
 DOMAIN-SUFFIX,ads24h.net
 DST-PORT,5228
+DST-PORT,3478
 IP-CIDR,203.107.1.0/24,no-resolve
