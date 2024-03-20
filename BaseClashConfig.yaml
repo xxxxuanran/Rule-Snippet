@@ -47,10 +47,10 @@ dns:
     - +.nexon.co.kr
     - +.nexon.com
   nameserver:
-    - 114.114.114.114
-    - tcp://180.184.1.1:53
-    - tls://120.53.53.53:853
-    - https://223.6.6.6/dns-query
+    # - 114.114.114.114
+    - 180.184.1.1
+    - tls://dot.pub:853
+    - https://dns.alidns.com/dns-query
   # fallback:
   #   - https://jp-kix.doh.sb/dns-query
   #   - tls://1dot1dot1dot1.cloudflare-dns.com

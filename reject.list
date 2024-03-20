@@ -8,13 +8,11 @@ DOMAIN,stun-1.chat.bilibili.com
 DOMAIN,p2p.huya.com
 DOMAIN,xy.cdn.huya.com
 DOMAIN-KEYWORD,dyp2p
+DOMAIN-KEYWORD,p2pchunk
+DOMAIN-KEYWORD,p2pable
 DOMAIN,ad.ldplayer.net
 DOMAIN,advertise.ldplayer.net
-DOMAIN,storetw.ldmnq.com
-DOMAIN,encdn.ldmnq.com
-DOMAIN,apien.ldmnq.com
-DOMAIN,apitw.ldmnq.com
 DOMAIN-SUFFIX,ads24h.net
 DST-PORT,5228
-DST-PORT,3478
+DST-PORT,18080
 IP-CIDR,203.107.1.0/24,no-resolve
