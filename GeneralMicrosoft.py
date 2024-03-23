@@ -10,7 +10,7 @@ resp = requests.get(url_365)
 
 if resp.status_code == 200:
     data = json.loads(resp.content.decode('utf-8'))
-    urls = set(['ms', 'msn.cn', 's-microsoft.com', 'microsoftpersonalcontent.com'])
+    urls = set(['ms', 'msn.cn', 's-microsoft.com', 'microsoftpersonalcontent.com', 'microsoft'])
     ips = set()
     others = set()
     for url in ["https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list",
