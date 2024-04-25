@@ -2,7 +2,7 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-ipv6: false
+ipv6: true
 
 experimental:
   sniff-tls-sni: true
@@ -10,7 +10,7 @@ experimental:
 dns:
   enable: true
   listen: 127.0.0.1:8853
-  ipv6: false
+  ipv6: true
   default-nameserver:
     - 101.198.198.198
     - 101.198.199.200
