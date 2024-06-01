@@ -18,6 +18,10 @@ dns:
     - 123.125.81.6
     - 218.30.118.6
     - 140.207.198.6
+  nameserver:
+    - 180.184.1.1
+    - tls://dns.pub:853
+    - https://dns.alidns.com/dns-query
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -39,51 +43,41 @@ dns:
     - '+.host'
     - '+.home.arpa'
     - '+.test'
-    - +.net
-    - +.org
-    - +.jp
-    - +.kr
+    - '+.example'
+    - '+.invalid'
+    - '+.localhost'
+    - '+.local'
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+    - msftconnecttest.com
+    - msftncsi.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.ipv6.microsoft.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - heartbeat.belkin.com
+    - +.linksys.com
+    - +.linksyssmartwifi.com
+    - +.router.asus.com
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - +.square-enix.com
+    - +.finalfantasyxiv.com
+    - +.ffxiv.com
+    - +.ff14.sdo.com
+    - ff.dorado.sdo.com
+    - +.media.dssott.com
+    - +.pvp.net
     - +.nexon.co.jp
     - +.nexon.co.kr
     - +.nexon.com
-  nameserver:
-    # - 114.114.114.114
-    - 180.184.1.1
-    - tls://dot.pub:853
-    - https://dns.alidns.com/dns-query
-  # fallback:
-  #   - https://jp-kix.doh.sb/dns-query
-  #   - tls://1dot1dot1dot1.cloudflare-dns.com
-  #   - tcp://208.67.222.222:5353
-  #   - 146.112.41.2
-  # fallback-filter:
-  #   geoip: false
-  #   # geoip-code: CN
-  #   ipcidr:
-  #     - 240.0.0.0/4
-  #     - 0.0.0.0/32
-  #     - 127.0.0.1/32
-  #   domain:
-  #     - +.g.cn
-  #     - +.google.cn
-  #     - +.googleapis.cn
-  #     - +.google.com
-  #     - +.googleapis.com
-  #     - +.gmail.com
-  #     - +.youtube.com
-  #     - +.youtu.be
-  #     - +.googlevideo.com
-  #     - +.doubleclick.net
-  #     - +.akadns.net
-  #     - +.akamai.net
-  #     - +.akamaihd.net
-  #     - +.akamaized.net
-  #     - +.cloudfront.net
-
-# Clash for Windows
-# cfw-latency-timeout: 3000
-# cfw-latency-url: http://cp.cloudflare.com/generate_204
-# cfw-conn-break-strategy:
-#   proxy: all
-#   profile: true
-#   mode: true
