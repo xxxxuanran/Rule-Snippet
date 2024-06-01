@@ -9,7 +9,7 @@ experimental:
 
 dns:
   enable: true
-  listen: 127.0.0.1:8853
+  listen: 127.0.0.1:1053
   ipv6: true
   default-nameserver:
     - 101.198.198.198
