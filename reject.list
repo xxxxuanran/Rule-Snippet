@@ -7,13 +7,14 @@ DOMAIN,stun.chat.bilibili.com
 DOMAIN,stun-1.chat.bilibili.com
 DOMAIN,stun.douyucdn.cn
 DOMAIN,stun1.douyucdn.cn
-DOMAIN,sta-op.douyucdn.cn
+DOMAIN,sta-op-test.douyucdn.cn
 DOMAIN,p2plog.douyucdn.cn
 DOMAIN,p2perrorlog.douyucdn.cn
 DOMAIN,streamdot.douyucdn.cn
 DOMAIN,dotserver.douyucdn.cn
 DOMAIN,dotab.douyucdn.cn
-DOMAIN,b.qchannel03.cn
+DOMAIN,dotbeats.douyucdn.cn
+DOMAIN-SUFFIX,qchannel03.cn
 DOMAIN,p2p.huya.com
 DOMAIN-SUFFIX,p2p.huya.com
 DOMAIN,xy.cdn.huya.com
@@ -29,4 +30,7 @@ DOMAIN,advertise.ldplayer.net
 DOMAIN-SUFFIX,ads24h.net
 DST-PORT,5228
 DST-PORT,18080
+DST-PORT,8082
+DST-PORT,14000
+DST-PORT,8002
 IP-CIDR,203.107.1.0/24,no-resolve
