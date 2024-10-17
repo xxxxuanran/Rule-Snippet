@@ -5,3 +5,4 @@ PROCESS-NAME,pwsh.exe
 PROCESS-NAME,git.exe
 PROCESS-NAME,Cursor.exe
 DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,github.com
