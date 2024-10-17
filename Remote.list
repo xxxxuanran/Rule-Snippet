@@ -2,3 +2,6 @@ DST-PORT,22
 PROCESS-NAME,Code.exe
 PROCESS-NAME,connect.exe
 PROCESS-NAME,pwsh.exe
+PROCESS-NAME,git.exe
+PROCESS-NAME,Cursor.exe
+DOMAIN-SUFFIX,cursor.sh
