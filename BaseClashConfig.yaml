@@ -3,14 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 ipv6: true
-
+external-controller: 0.0.0.0:9090
+clash-for-android:
+  append-system-dns: false
 experimental:
   sniff-tls-sni: true
-
+profile:
+  tracing: true
 dns:
   enable: true
   listen: 127.0.0.1:1053
   ipv6: true
+  enhanced-mode: fake-ip
   default-nameserver:
     - 101.198.198.198
     - 101.198.199.200
@@ -22,15 +26,30 @@ dns:
     - 180.184.1.1
     - tls://dns.pub:853
     - https://dns.alidns.com/dns-query
-  enhanced-mode: fake-ip
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://dns.sb/dns-query
+    - https://dns.opendns.com/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.cn
+      - +.googleapis.cn
+      - +.google
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
-    - '+.stun.*.*'
-    - '+.stun.*.*.*'
-    - '+.stun.*.*.*.*'
-    - '+.stun.*.*.*.*.*'
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
     - '*.n.n.srv.nintendo.net'
     - '+.stun.playstation.net'
     - 'xbox.*.*.microsoft.com'
@@ -49,12 +68,10 @@ dns:
     - '+.local'
     - +.msftconnecttest.com
     - +.msftncsi.com
-    - msftconnecttest.com
-    - msftncsi.com
     - +.srv.nintendo.net
     - +.stun.playstation.net
     - xbox.*.microsoft.com
-    - xnotify.xboxlive.com
+    - +.xboxlive.com
     - +.ipv6.microsoft.com
     - +.battlenet.com.cn
     - +.wotgame.cn
