@@ -2,7 +2,6 @@ DOMAIN,t.co
 DOMAIN,u2.dmhy.org
 DOMAIN,acg.rip
 DOMAIN-SUFFIX,zhile.io
-DOMAIN-SUFFIX,cloudflarestream.com
 DOMAIN-SUFFIX,cocopilot.org
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,nexon.co.jp
@@ -20,3 +19,4 @@ DOMAIN-SUFFIX,dev
 DOMAIN-SUFFIX,io
 DOMAIN-SUFFIX,eu.org
 DOMAIN-SUFFIX,sb
+DOMAIN-SUFFIX,eu

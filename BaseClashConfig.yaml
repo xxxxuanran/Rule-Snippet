@@ -18,14 +18,13 @@ dns:
   default-nameserver:
     - 101.198.198.198
     - 101.198.199.200
-    - 101.226.4.6
-    - 123.125.81.6
-    - 218.30.118.6
-    - 140.207.198.6
+    - 52.80.66.66
+    - 117.50.22.22
   nameserver:
     - 180.184.1.1
-    - tls://dns.pub:853
-    - https://dns.alidns.com/dns-query
+    - tcp://119.28.28.28
+    - tls://dns.alidns.com:853
+    - https://doh.pub/dns-query
   fallback:
     - https://1.0.0.1/dns-query
     - https://dns.sb/dns-query
@@ -37,40 +36,33 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
       - 127.0.0.1/32
-    domain:
-      - +.google.cn
-      - +.googleapis.cn
-      - +.google
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-    - '*.lan'
+    - "*.lan"
     - localhost.ptlogin2.qq.com
     - stun.*.*
     - stun.*.*.*
     - +.stun.*.*
     - +.stun.*.*.*
     - +.stun.*.*.*.*
-    - '*.n.n.srv.nintendo.net'
-    - '+.stun.playstation.net'
-    - 'xbox.*.*.microsoft.com'
-    - '*.*.xboxlive.com'
-    - '*.msftncsi.com'
-    - '*.msftconnecttest.com'
-    - '+.private'
-    - '+.localdomain'
-    - '+.home'
-    - '+.host'
-    - '+.home.arpa'
-    - '+.test'
-    - '+.example'
-    - '+.invalid'
-    - '+.localhost'
-    - '+.local'
+    - +.nintendo.net
+    - +.playstation.net
+    - xbox.*.microsoft.com
+    - xbox.*.*.microsoft.com
+    - "*.msftncsi.com"
+    - "*.msftconnecttest.com"
+    - +.private
+    - +.localdomain
+    - +.home
+    - +.host
+    - +.home.arpa
+    - +.test
+    - +.example
+    - +.invalid
+    - +.localhost
+    - +.local
     - +.msftconnecttest.com
     - +.msftncsi.com
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
     - +.xboxlive.com
     - +.ipv6.microsoft.com
     - +.battlenet.com.cn
@@ -91,8 +83,7 @@ dns:
     - +.square-enix.com
     - +.finalfantasyxiv.com
     - +.ffxiv.com
-    - +.ff14.sdo.com
-    - ff.dorado.sdo.com
+    - +.sdo.com
     - +.media.dssott.com
     - +.pvp.net
     - +.nexon.co.jp
