@@ -18,22 +18,18 @@ dns:
   default-nameserver:
     - 101.198.198.198
     - 101.198.199.200
-    - 52.80.66.66
-    - 117.50.22.22
+    - 114.114.114.114
+    - 114.114.115.115
   nameserver:
     - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://dot.pub
     - tcp://180.184.1.1
-    - 180.76.76.76
-  # fallback:
-  #   - https://1.0.0.1/dns-query
-  #   - https://dns.sb/dns-query
-  # fallback-filter:
-  #   geoip: true
-  #   geoip-code: CN
-  #   ipcidr:
-  #     - 240.0.0.0/4
-  #     - 0.0.0.0/32
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
