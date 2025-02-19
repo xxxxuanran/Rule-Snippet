@@ -1,0 +1,4 @@
+PROCESS-NAME,OneDriveUpdater
+PROCESS-NAME,OneDrive
+USER-AGENT,OneDrive*
+USER-AGENT,OneDriveiOSApp*

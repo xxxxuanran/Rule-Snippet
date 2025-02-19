@@ -16,12 +16,14 @@ for line in list1.splitlines():
         if l[-2].endswith(']'):
             l[-2] = l[-2].split('[')[0]
             line = f"DOMAIN-KEYWORD,{l[-2]}"
+        elif l[-2].find(']') != -1:
+            line = f"DOMAIN-KEYWORD,{l[-2].split(']')[-1].split('*')[-1].split('?')[-1]}.{l[-1][:-1]}"
         else:
             line = f"DOMAIN-SUFFIX,{l[-2]}.{l[-1][:-1]}"
     results.add(line)
 
 results = list(results)
 
-with open('cdn.list', 'w+') as f:
+with open('./non_ip/cdn.list', 'w+') as f:
     for result in results:
         f.write(result + '\n')

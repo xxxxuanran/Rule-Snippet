@@ -1,15 +1,11 @@
-DOMAIN-KEYWORD,lanzou
-DOMAIN,copilot.tencent.com
-DOMAIN,otheve.beacon.qq.com
-DOMAIN-SUFFIX,d.adguard-dns.com
-DOMAIN-SUFFIX,alidns.com
-DST-PORT,853
 IP-CIDR,223.5.5.5/32,no-resolve
 IP-CIDR,223.6.6.6/32,no-resolve
 IP-CIDR,1.12.12.12/32,no-resolve
 IP-CIDR,120.53.53.53/32,no-resolve
 IP-CIDR,119.29.29.29/32,no-resolve
 IP-CIDR,119.28.28.28/32,no-resolve
+IP-CIDR,182.254.116.116/32,no-resolve
+IP-CIDR,182.254.118.118/32,no-resolve
 IP-CIDR,180.184.1.1/32,no-resolve
 IP-CIDR,180.184.2.2/32,no-resolve
 IP-CIDR,180.76.76.76/32,no-resolve
@@ -23,3 +19,7 @@ IP-CIDR,114.114.114.114/32,no-resolve
 IP-CIDR,114.114.115.115/32,no-resolve
 IP-CIDR,52.80.66.66/32,no-resolve
 IP-CIDR,117.50.22.22/32,no-resolve
+IP-CIDR,52.80.52.52/32,no-resolve
+IP-CIDR,117.50.10.10/32,no-resolve
+IP-CIDR,52.80.60.30/32,no-resolve
+IP-CIDR,117.50.60.30/32,no-resolve

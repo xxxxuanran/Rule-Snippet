@@ -16,7 +16,12 @@ DOMAIN,dotserver.douyucdn.cn
 DOMAIN,dotab.douyucdn.cn
 DOMAIN,dotbeats.douyucdn.cn
 DOMAIN,dy-ss.douyucdn.cn
+DOMAIN,a.b.c
 DOMAIN,a.c.b
+DOMAIN,b.c.a
+DOMAIN,b.a.c
+DOMAIN,c.a.b
+DOMAIN,c.b.a
 DOMAIN,sdkapi-unity.douyucdn.cn
 DOMAIN-SUFFIX,qchannel03.cn
 DOMAIN,p2p.huya.com
@@ -32,10 +37,3 @@ DOMAIN-KEYWORD,ppcdn
 DOMAIN,ad.ldplayer.net
 DOMAIN,advertise.ldplayer.net
 DOMAIN-SUFFIX,ads24h.net
-DST-PORT,5228
-DST-PORT,18080
-DST-PORT,8082
-DST-PORT,14000
-DST-PORT,8002
-DST-PORT,4480
-IP-CIDR,203.107.1.0/24,no-resolve

@@ -11,6 +11,7 @@ resp = requests.get(url_365)
 if resp.status_code == 200:
     data = json.loads(resp.content.decode('utf-8'))
     urls = set(['ms', 'msn.cn', 's-microsoft.com', 'microsoftpersonalcontent.com', 'microsoft'])
+    key_urls = set()
     ips = set()
     others = set()
     for url in ["https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list",
@@ -19,6 +20,8 @@ if resp.status_code == 200:
         for line in resp.text.splitlines():
             if line.startswith("DOMAIN-SUFFIX,"):
                 urls.add(line.replace("DOMAIN-SUFFIX,", "").strip())
+            elif line.startswith("DOMAIN-KEYWORD,"):
+                key_urls.add(line.replace("DOMAIN-KEYWORD,", "").strip())
             elif not line.startswith('#'):
                 others.add(line)
     for endpoint in data:
@@ -32,11 +35,15 @@ if resp.status_code == 200:
     urls = list(urls)
     ips = list(ips)
     others = list(others)
-    with open('Microsoft.list', 'w+') as f:
+    with open('./non_ip/Microsoft.list', 'w+') as f:
         for url in urls:
             f.write('DOMAIN-SUFFIX,%s\n' % url)
+        for url in key_urls:
+            f.write('DOMAIN-KEYWORD,%s\n' % url)
+    with open('./ip/Microsoft.list', 'w+') as f:
         for ip in ips:
             f.write('IP-CIDR,%s,no-resolve\n' % ip)
+    with open('./other/Microsoft.list', 'w+') as f:
         for other in others:
             f.write('%s\n' % other)
 else:
