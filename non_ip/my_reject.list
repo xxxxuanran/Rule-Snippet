@@ -1,3 +1,4 @@
+# 哔哩哔哩
 DOMAIN,black.qimo.ink
 DOMAIN-SUFFIX,mcdn.bilivideo.cn
 DOMAIN,data.bilivideo.com
@@ -6,6 +7,7 @@ DOMAIN,httpdns.bilivideo.com
 DOMAIN,grpc.biliapi.net
 DOMAIN,stun.chat.bilibili.com
 DOMAIN,stun-1.chat.bilibili.com
+# 斗鱼
 DOMAIN,stun.douyucdn.cn
 DOMAIN,stun1.douyucdn.cn
 DOMAIN,sta-op-test.douyucdn.cn
@@ -22,18 +24,26 @@ DOMAIN,b.c.a
 DOMAIN,b.a.c
 DOMAIN,c.a.b
 DOMAIN,c.b.a
+DOMAIN,sdkapi.douyucdn.cn
 DOMAIN,sdkapi-unity.douyucdn.cn
+DOMAIN,abvolcapi.douyucdn.cn
+DOMAIN-SUFFIX,edgesrv.com
+DOMAIN-KEYWORD,dyp2p
+DOMAIN-KEYWORD,p2pchunk
+DOMAIN-KEYWORD,p2pable
+DOMAIN-KEYWORD,ppcdn
+# 虎牙
 DOMAIN-SUFFIX,qchannel03.cn
-DOMAIN,p2p.huya.com
 DOMAIN-SUFFIX,p2p.huya.com
 DOMAIN,xy.cdn.huya.com
 DOMAIN,ylog.huya.com
 DOMAIN,livewebbs2pcdn.msstatic.com
 DOMAIN-SUFFIX,ppio.cloud
-DOMAIN-KEYWORD,dyp2p
-DOMAIN-KEYWORD,p2pchunk
-DOMAIN-KEYWORD,p2pable
-DOMAIN-KEYWORD,ppcdn
+DOMAIN,natchecker.huya.com
+DOMAIN,ext.huya.com
+DOMAIN,hyext.msstatic.com
+DOMAIN-SUFFIX,xionguamaqui.com
+# 杂项
 DOMAIN,ad.ldplayer.net
 DOMAIN,advertise.ldplayer.net
 DOMAIN-SUFFIX,ads24h.net
