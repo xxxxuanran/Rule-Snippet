@@ -4,7 +4,6 @@ DOMAIN-SUFFIX,mcdn.bilivideo.cn
 DOMAIN,data.bilivideo.com
 DOMAIN,data.bilibili.com
 DOMAIN,httpdns.bilivideo.com
-DOMAIN,grpc.biliapi.net
 DOMAIN,stun.chat.bilibili.com
 DOMAIN,stun-1.chat.bilibili.com
 # 斗鱼
