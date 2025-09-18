@@ -14,6 +14,10 @@ DOMAIN,mon-va.byteoversea.com
 DOMAIN,mon-va.byteoversea.com
 DOMAIN-SUFFIX,marscode.cn
 DOMAIN-SUFFIX,marscode.com
+DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,byteintl.com
+DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,yhgfb-static.com
 # 模型
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,grok.com
