@@ -1,24 +1,39 @@
+# AI IDE
 DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,gitlab.com
+DOMAIN-SUFFIX,augmentcode.com
+DOMAIN-SUFFIX,kilocode.ai
 DOMAIN-SUFFIX,visualstudio.com
-DOMAIN-SUFFIX,vscode-unpkg.net
-DOMAIN-SUFFIX,vscode-cdn.net
-DOMAIN-SUFFIX,open-vsx.org
-DOMAIN,openvsxorg.blob.core.windows.net
 DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,trae.cn
+DOMAIN-SUFFIX,trae.com.cn
+DOMAIN,mcs.zijieapi.com
 DOMAIN,starling.zijieapi.com
 DOMAIN,starling-oversea.byteoversea.com
 DOMAIN,sgali-mcs.byteoversea.com
 DOMAIN,mon-va.byteoversea.com
 DOMAIN,mon-va.byteoversea.com
+DOMAIN-SUFFIX,marscode.cn
+DOMAIN-SUFFIX,marscode.com
+# 模型
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,augmentcode.com
-DOMAIN-SUFFIX,vsassets.io
-DOMAIN-SUFFIX,posthog.com
 DOMAIN-SUFFIX,poolhub.me
+DOMAIN-SUFFIX,openrouter.ai
+# 代码托管
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,gitlab.com
+# 资源
+DOMAIN-SUFFIX,vscode-unpkg.net
+DOMAIN-SUFFIX,vscode-cdn.net
+DOMAIN-SUFFIX,open-vsx.org
+DOMAIN,openvsxorg.blob.core.windows.net
 DOMAIN-SUFFIX,withorb.com
 DOMAIN-SUFFIX,gitkraken.dev
 DOMAIN-SUFFIX,gitkraken.com
+DOMAIN-SUFFIX,vsassets.io
+DOMAIN-SUFFIX,gallerycdn.vsassets.io
+DOMAIN-SUFFIX,gallery.vsassets.io
+DOMAIN-SUFFIX,gallerycdn.azure.cn
+DOMAIN-SUFFIX,posthog.com
+# .ai
 DOMAIN-SUFFIX,ai
