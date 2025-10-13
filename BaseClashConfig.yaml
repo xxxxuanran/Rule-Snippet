@@ -14,25 +14,46 @@ dns:
   enable: true
   listen: 127.0.0.1:1053
   ipv6: true
+  use-hosts: true
+  use-system-hosts: true
   enhanced-mode: fake-ip
   default-nameserver:
     - 101.198.198.198
     - 101.198.199.200
     - 114.114.114.114
     - 114.114.115.115
+  nameserver-policy:
+    'geosite:cn':
+      - tls://dot.pub
+      - https://9999.alidns.com/dns-query
   nameserver:
-    - https://doh.pub/dns-query
     - tls://dot.pub
-    - tcp://180.184.1.1
+    - https://9999.alidns.com/dns-query
+  fallback:
+    - tls://p0.freedns.controld.com
+    - https://doh.harusaruhi.lol/dns-query
+  proxy-server-nameserver:
+    - tls://dot.pub
+    - https://9999.alidns.com/dns-query
+  direct-nameserver:
+    - tls://dot.pub
+    - https://9999.alidns.com/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
+    geosite:
+      - gfw
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
+  fake-ip-filter:
     - "*.lan"
+    - "*.teafone.com"
+    - "*.sktswe.net"
+    - rtc.goodfone.co.kr
+    - "*.chattti.com"
     - localhost.ptlogin2.qq.com
     - stun.*.*
     - stun.*.*.*
@@ -49,7 +70,7 @@ dns:
     - time.nist.gov
     - time.apple.com
     - time.asia.apple.com
-    - pool.ntp.org
+    - +.ntp.org
     - ntp.ubuntu.com
     - ntp.aliyun.com
     - ntp1.aliyun.com
