@@ -48,7 +48,6 @@ dns:
       - 0.0.0.0/32
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-  fake-ip-filter:
     - "*.lan"
     - "*.teafone.com"
     - "*.sktswe.net"
