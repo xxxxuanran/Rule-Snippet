@@ -3,6 +3,7 @@ node_modules
 .clinic
 .wireit
 public
+.vscode
 
 List/domainset/reject.conf
 List/domainset/reject_phishing.conf
